@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(57deg,#00c6a7,#1e4d92);
+    clip-path: polygon(0% 0%,100% 0%,100% 85%,0% 100%);
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    color: #fff;
+}
+
+.logo {
+    width: 50%;
+    height: 100px;
+}
+
+.logo h1 {
+    line-height: 100px;
+    padding-left: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    /*text-shadow: black 0,0,1.5,0.5;*/
+}
+
+.menu {
+    width: 50%;
+    height: 100px;
+}
+
+.menu ul {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+}
+
+.left-side {
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.left-side img {
+    width: 600px;
+    height: 500px;
+    /*opacity: 0.5;*/
+}
+
+.right-side {
+    width: 55%;
+    height: 300px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.right-side h1 {
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.right-side p {
+    font-size: 1.1rem;
+    padding: 30px 0;
+}
+
+.right-side button{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(57deg,#00c6a7,#1e4d92);
+    border-radius: 4px;
+    padding: 20px 35px;
+}
+
+.right-side button:hover{
+    background-image: linear-gradient(57deg,#1e4d92,#00c6a7);
+}
+
+.change_text::after {
+    color: #00c6a7;
+    content: "";
+    animation: changetext 10s infinite linear;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@keyframes changetext{
+    0% {content: "(Visit My our Website)";}
+    20% {content: "(To Create a Good website)";}
+    35% {content: "(See our Source code)";}
+    60% {content: "(Create Multiple Webpages)";}
+    80% {content: "(Safely Enviromental Working)";}
+    100% {content: "(Publsh Your Website)";}
+}
+
+footer{
+    background-color: #00c6a7;
+    color: white;
+    padding: 20px;
+}
+
+footer p{
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
